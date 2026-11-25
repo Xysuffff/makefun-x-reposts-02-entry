@@ -2,6 +2,7 @@
 // The actual entry is the X posts themselves (see POSTS.json).
 // This program runs in the grader's container with MAKEFUN_BOT_DIR=/bot and MAKEFUN_OUTPUT_DIR=/output.
 // Local test: mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+// Deterministic: two runs produce identical output (no timestamps, no randomness).
 
 import { copyFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
